@@ -1,0 +1,12 @@
+THIS IS NOT A README AND WILL BE GOING AWAY
+This is the krap shoot brain. 
+Right now we need to fill in the package.xml files with the information ROS needs to launch each as a node. 
+See initializer/project.xml for example. This example needs work as we get code built.
+We also need to fill in the motors.yaml and sensors.yaml with information about motors and sensors.
+Each package will also need it's cmakelists.txt file filled. 
+This is important to build each package regardless of whether or not it uses python or c.
+These are the build instructions, from the krapshoot directory. Change {OS SUFFIX} to .sh, .bash. or .zsh for your OS:
+    conda activate ros_env
+    colcon build --simlink-install
+    source install/setup.{OS SUFFIX}
+    ros2 launch robot_bringup robot.launch.py
