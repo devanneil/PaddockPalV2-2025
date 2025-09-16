@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>KrapShoot_initializer</name>
+  <version>0.1.0</version>
+  <description>Launch and configuration files to bring the robot online.</description>
+
+  <maintainer email="Colorado School of Mines">Capstone Paddock Pal V.2 2025</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Depends on launch and core ROS tools -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>robot_control</exec_depend>
+  <exec_depend>robot_navigation</exec_depend>
+  <exec_depend>robot_perception</exec_depend>
+  <exec_depend>robot_hardware</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

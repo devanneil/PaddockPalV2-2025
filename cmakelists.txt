@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+project(krapShoot)
+
+# Optionally enforce C++ standard globally
+set(CMAKE_CXX_STANDARD 17)
+
+# Let catkin or ament handle dependencies
+find_package(catkin REQUIRED)
+
+add_subdirectory(src/initializer)
+add_subdirectory(src/control)
+add_subdirectory(src/perception)
+add_subdirectory(src/navigation)
+add_subdirectory(src/interface)
+#add_subdirectory(src/robot_msgs)
+add_subdirectory(src/util)
